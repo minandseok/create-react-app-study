@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movies";
-import "../styles/home.css";
 /* 
   useEffect(() => {
     fetch(

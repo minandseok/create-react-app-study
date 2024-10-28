@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import "../styles/movie.css";
 
 function Movie({ id, coverImg, title, summary, genres }) {
   return (
@@ -11,7 +10,7 @@ function Movie({ id, coverImg, title, summary, genres }) {
         alt={title}
       />
       <h2 className="movie-box__title">
-        <Link to={`/movie/${id}`}>{title}</Link>
+        <Link to={`{process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
       </h2>
       <p className="movie-box__summary">{summary}</p>
       <ul className="movie-box__genres">

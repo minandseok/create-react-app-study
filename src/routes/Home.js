@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movies";
+import styles from "../routes/Home.module.css";
 /* 
   useEffect(() => {
     fetch(
@@ -39,15 +40,18 @@ function Home() {
   }, []);
 
   return (
-    <main>
+    <main className={styles.container}>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className={styles.loader_box}>
+          <h1 className={styles.loader}>Loading...</h1>
+        </div>
       ) : (
-        <div>
+        <div className={styles.movies}>
           {movies.map((movie) => (
             <Movie
               key={movie.id}
               id={movie.id}
+              year={movie.year}
               coverImg={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}

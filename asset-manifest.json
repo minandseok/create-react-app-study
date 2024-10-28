@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/create-react-app-study/static/css/main.6cd1306c.css",
+    "main.js": "/create-react-app-study/static/js/main.88b39b62.js",
+    "index.html": "/create-react-app-study/index.html",
+    "main.6cd1306c.css.map": "/create-react-app-study/static/css/main.6cd1306c.css.map",
+    "main.88b39b62.js.map": "/create-react-app-study/static/js/main.88b39b62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cd1306c.css",
+    "static/js/main.88b39b62.js"
+  ]
+}
